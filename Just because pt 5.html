@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Because Pt. 5 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Just Because Pt. 5 💌</h1>
+  <p>baby you’ve always been the only person i genuinely care for from the bottom of my heart, i could never imagine myself with another boy, or loving another guy the way i love you, i don’t wanna imagine how life would be without you, nor would i want to experience it, losing you would be the most heartbreaking most gut wrenching mistake i could ever make and i would do anything to avoid waking up one day and remembering you’re no longer part of my life. I’m so grateful to be the person you share everything with, im so lucky to be the person you trust, i’m so thankful to be yours, i could never ask for a partner as sweet and thoughtful as you are, nor could I ever get someone as good as you are, you’re the best boyfriend to exist in this world, you actually make me feel loved and cared for, you put your time and effort in our relationship, you talk things out, you try to fix things and communicate instead of leaving stuff behind, and that itself is more than enough for me. I feel so comfortable around you, and i trust you with all my heart, you’re the only person i’d open up to about anything, i’m so happy to have you in my life baby and i hope i’ll get to spend the rest of my life by your side. I want to show you how much i truly love and appreciate you and care about you and i want to show you that you’re the only guy i want and need in my life for it to be complete, i truly believe i found the one, you complete me, you’re like a part of me, you own my heart and mind, i can never stop thinking about you, you never seem to leave my mind (not that i want you to), i love everything about you, every feature, every single detail, you’re so perfect just the way you are and i dont want you thinking i’d love you more if you changed in any way, i love you for who you are, you’re perfect and there’s not a single flaw in you that i would change, you mean everything to me habib and i would do anything i can possibly do just to see you happy, because your happiness is my happiness, seeing you happy and smiley heals something in me, i could never explain how much i love seeing you smiling, and you in general, i feel like the luckiest girl just by remembering a guy like you is my partner, i love you so much habib and i really hope im showing it properly, you truly are one of a kind and im forever grateful to call you mine</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

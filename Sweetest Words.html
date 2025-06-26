@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweetest Words Ever 🫶</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Sweetest Words Ever 🫶</h1>
+  <p>i js wanted to let you know how much i love you, like idk if i show it enough or not but i really love you so much nd i’m really sorry if i ever hurt you in the slightest way or if i ever annoyed you or did anything that could’ve bothered u in any way possible. You’re literally the kindest, sweetest, cutest, most adorable and caring guy I’ve ever met. You always find a way to make me laugh even when i’m not in the mood for it, you always match the vibe (even if it’s some gay bullshit but you still match the vibe ) you always check up on me nd ur always there for me when i feel like complaining or js talkin for no reason nd i feel like i could tell you anything without being judged. You make me so happy js by being by my side and I love u so much for that. You’re all I could ever ask for in a guy, you’re cute you’re funny you’re athletic and so so SO caring, and u have the cutest face and the prettiest eyes i’ve ever seen EVER, and you’re js so kissable bro fr. Everything about u is attractive not only physically but also in terms of personality you’re perfect both ways, yk how to talk to a girl nd how to treat a girl right nd allat (u feel me) nd that js makes u even more perfect. I hope you know how much i appreciate every single moment spent with u, it makes me sosososo happy to be able to talk to u nd i hope u know how much our convos mean to me, whether it’s random shi or actual talks. I appreciate everything you do to make me happy, even js the fact that i have someone as wonderful as u in my life makes me so happy fr. I’m so lucky to have you in my life, I literally feel like the luckiest woman ever, i’m so obsessed with you, i love you so much baby nd i care about u more than anything. You mean everything to me really. I love you so much nd i’ll always be there for you whenever you need anything</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

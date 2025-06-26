@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>When You Were Upset 😔</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>When You Were Upset 😔</h1>
+  <p>Like i know i say it a lot bas i mean it each time like i love you so so much i cant even find the words to describe how much i love and appreciate you, you’re literally the best boyfriend a girl could ever have or ask for and i’m the luckiest person to have a bf like you w im so so grateful for everything you do, you make me so happy just by being there for me and i cant ever thank you enough for listening to me and making me feel understood, i feel so comfortable when im around you and i feel like i can actually be myself around you without being judged and i love that, w i love the fact that you actually know how to communicate w like you just get me w ur my person w my other half w my everything w like YOEBURNEEE I ADORE YOUUU UR SO CUTEEE  ya allahhhh you’re so perfect baby and i’m so glad to call you mine, and i hope this isnt just another relationship for the both of us, i hope we can actually make it work between us w thank you for putting in so much effort and not giving up on us hayete i love you so much w again im so grateful to have you in my life</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

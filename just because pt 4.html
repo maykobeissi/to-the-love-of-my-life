@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Just Because Pt. 4 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Just Because Pt. 4 💌</h1>
+  <p>
+im so grateful to have you in my life, every day im reminded of how lucky i am to have a boyfriend as perfect and sweet as you, you’re all a girl could ask for and wish for in a guy, ur caring and funny and smart and handsomeee and you have the prettiest and i mean the PRETTIEST smile ever (STARJE OUL LAE), and your eyes are all i wanna stare at day and night, they’re so mesmerizing, and i’m so grateful to be the person you chose to be with, i’m so happy with you, you make me the happiest girl in the whole entire universe just by doing the smallest things, im so thankful for you and everything you’ve done throughout our relationship and i promise you I’m taking you as seriously as possible, my focus is fully on you, i’m ready to do anything to make you happy, no matter what it is you just name it and i’ll do it as long as it means making you happy baby, i hope you know i’d rather have you over anything in this world, and i’d do anything to show you how much i care about you and this relationship, whether it’s leaving people behind or cutting ties with friends or blocking anyone, i dont care about anyone besides you, you mean everything to me, you’re literally a blessing sent from the above and im so glad i get to be the one next to you, i hope i stay with you forever, i want to be with you during your ups and downs, i’ll always be by your side, i’ll always be there for you no matter what, i want you to feel as comfortable as you could be when ur with me, i want you to tell me everything that bothers you, i want you to express your feelings freely without feeling like i would judge you or call you insecure (i would never baby) i want us to face everything together, do everything together, stay together, live together, enjoy the rest of our lives together, i’m happy with anything as long as it’s you im with, as long as it’s you by my side, as long as i have you, only you and no one else, i dont want anyone besides you, i want you all to myself, i dont wanna see any other girl falling in love with you, i dont want us becoming strangers again, im trying my best for you and our relationship, im putting all my time and efforts and thoughts into our relationship because i want you to be a part of my life (you already are) (my other half), i see you in my future and i hope we make it together, i know i say it a lot but i mean it more and more every day, you really are my everything baby, i hope you know how much i appreciate and cherish every single moment spent with you, whether it’s texting or calling, i enjoy every bit of it, you make my day a million times better and i couldnt ask for more, i only want and need you in my life, i love you so much hayete and i hope you know how precious you are, you have the purest soul and sweetest heart, you’re so adorable, i love everything about you from head to toe, im sorry if i ever bothered you, im sorry if i ever made you feel like you’re not enough, you’re more than enough, no one compares nor comes close to what you are in my eyes, im so obsessed with you, you’re all that’s on my mind, everywhere i go, whoever im with, im always thinking about you no matter the situation, i love you so much habib
+  </p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

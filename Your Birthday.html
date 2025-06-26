@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Birthday 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Your Birthday 🎂</h1>
+  <p>HAPPY BIRTHDAY HABIBBB  I js want u to know how much you mean to me, ever since i met you I’ve gained more and more feelings for u day by day and i’m so lucky to have someone like you in my life. You’re the ideal guy tbh you’re funny you’re cute nd handsome nd smart and you’re so caring it’s so adorable and ur just overall perfect. You make me the happiest girl ever just by existing nd i hope nothing comes in between us, i genuinely love you so much like more than you could ever imagine. You mean everything to me and i’m so grateful to have you by my side, and I’ll always be there for you if you need anything. You deserve the best. Happy birthdayyy i love youuu baby</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

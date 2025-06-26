@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>When I Reassured You 🧸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>When I Reassured You 🧸</h1>
+  <p>Baby i’m taking you and our relationship seriously w no i wouldnt do the same shit i did with my exes with you, i wasnt taking them that seriously, w i promise you i’m not talking to other guys w no other guy has my interest w you’re the only one i swear, w no i’m not saying that to comfort you or hide shit from you I actually mean it you’re the only guy in my life rn w i couldnt be any happier nor ask for more, and you’re already the best boyfriend and i hope im being a good girlfriend i wouldnt want hurting you or doing something that bothers you w i want you to tell me if i did so i can fix it and avoid losing you, you mean everything to me and I’m literally the luckiest person in the world to have such a perfect boyfriend by my side, you’re the cutest, sweetest, most adorable and kindhearted guy ever and you have the purest soul w everything about you from head to toe is perfect, and i love you so much baby, w i’m willing to do anything to make you feel as comfortable and happy in this relationship, and i promise you i’m taking us 100% seriously, i actually want a future with you in it (as the groom obviously ) and i hope we’ll get there someday</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

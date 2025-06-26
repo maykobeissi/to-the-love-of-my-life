@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Just Because Pt. 3 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Just Because Pt. 3 💌</h1>
+  <p>
+hey baby ik ur asleep w kelshi bas lowkey (very much highkey) i missed tf out of you w I’m sorry we didnt get to talk properly today i was kinda busy especially halaa but i promise i’ll make it up for you however you want hayete. I just wanted to say that i love you tons, more than you could ever imagine, more than words could ever describe, i cant even find the right words to explain how much i love and appreciate you and everything you do, and i’m so happy to be yours and so proud to call you mine, you make me fall in love with you more and more day by day and you just keep getting more perfect from a day to another and i keep on falling harder and harder for you, and my feelings for you won’t ever stop growing more and more. Everyday you make me realize how lucky i am to have you in my life, i’m so lucky to have someone as sweet and caring as you are. You treat me so well, like SO well, you always check up on me and you always ask about me and that’s genuinely so sweet of you, I hope i make you feel as appreciated as you make me feel baby. Ever since my last two relationships I didn’t feel like i was ever gonna be understood, cared for and loved the way I love and care for my partner in a relationship but then you came along and I have never felt this loved and understood and heard before you came into my life and i just want to thank you for that, thank you for making me feel this special and important every day baby, i hope i make you feel the same. You put a smile on my face so effortlessly, even thinking about you makes me smile, or looking at my wallpaper (), you’re so adorable baby. I want you to know that I would rather try over and over again with you rather than try with another guy, ever since I saw you I knew you were the guy I wanted, the guy I truly loved and cared for, the guy i wanted to see in my future, you were literally so sweet since that first day I met you and you’re still the sweetest guy I’ve ever known, and I was and still am ready to do whatever it takes just to have you by my side no matter what, because i dont wanna lose you, i cant imagine my life without you in it, nor without texting you or checking up on you, I know it’s only been around 5 months (ha ysir half a year idek how) since we met but you changed my life so much in such a short time, we’ve been talking every day ever since we met and we just instantly clicked, I feel like I’ve known you forever, and I hope we last forever as well. I value you and our relationship so much, you’re my main priority, and all that I care for, and I hope you know I’ll always be here for you like you’ve been there for me no matter the circumstances, I’m trying my best to be the perfect girlfriend for you because you deserve nothing less than a perfect partner for being such a wonderful boyfriend. I’m sorry if I ever hurt you or made you doubt the love I have for you, I really love you more than anything in the world and please tell me if I ever did anything wrong, I wouldn’t want to repeat the same mistakes and risk losing you, I want us to last and grow together and fix our relationship together baby, I’m so grateful to have you in my life, I truly appreciate everything you do from the tiniest details of it, I dont know what I’ve done to deserve you but I’m so happy to have you by my side and I hope I get to keep you next to me till my last moment. You mean everything to me, you’re my comfort person, my other half, my sweet boy, my
+babyyyyyy, my mann my husband the love of my life, I love you so much baby and I genuinely cant wait to see you because im going to give you the biggest hugs and kisses as soon as i see you fr I love you so much albe and I hope you know how much you mean to me
+  </p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

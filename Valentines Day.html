@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Valentine's Day 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>First Valentine's Day 💖</h1>
+  <p>HAPPY VALENTINES DAY HAYETE ❤️ I wanted to thank you once again for everything, no matter how many times i do so it wont ever be enough, you give me motivation to keep going every day, you’re the reason i got my smile back, you’re my everything, you’re mine, MINE 💘 and you’re like a gift sent from God himself to me and i’m so grateful to have you in my life. Ever since i met you i’ve been the happiest i could ever be, you know how to make me laugh and how to match the energy and i love that about you, i love everything about you asln everything about you is so perfect, even in the smallest details everything that you have is perfect. Not only you have a perfect personality but also perfect looks w overall ur just so adorable and caring and i would do anything just to make you happy. I don’t ever wanna lose you nor hurt you or anything like that so please if i ever do anything that bothers you in the slightest way tell me so i can change it. I’m so happy to be able to call you mine, ur so handsome, LIKE SO HANDSOME, i love your eyes, I COULD STARE AT THEM FOR HOURS 😩 w your hair is so pretty i wish i could play with it like rn rn  w your lips (i will be kissing them trust). EVERYTHING ABOUT YOU IN GENERAL IS SO WOWOWOW W UR SO WOWOWOWOWWW 😭 i’m so lucky to have you by my side. I appreciate you and all your efforts and every single second spent with you, w i love you so much, you make me feel so loved and i couldnt ever thank you enough once again hayete. I adore youu so much, i’m so obsessed with you w i’m ready to do anything to keep you by my side and to keep our relationship. I’ll always be here for you whether it’s to talk or complain or vent or literally anything that you could think of, as long as it’s with you then i’m ready for anything w i hope you know how much i love you aanjd ktir bhebak like KTIR KTIR 🥹 you mean the world to me, you’re my everything, i love you, you deserve the entireeee universe, i love you again and happy valentines day baby 💌</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reassurance Pt. 3 💞</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Reassurance Pt. 3 💞</h1>
+  <p>i love you so much w i hope you know how much i appreciate you and everything you do to make me happy, i’m so lucky to have you in my life w i can promise you that you’re the only guy that i love from the bottom of my heart, and the only guy i care for, w you’re the only guy that has and will always have all my attention, you’re just so perfect baby ur all i couldve ever wanted and wished for and asked for in a guy and idk what i couldve possibly done to deserve someone like you, you’re so adorable, you have the prettiest eyes and the most contagious smile i’ve ever seen in my entire life, literally my favorite features of yours, and everything about you is so adorable and flawless w i just wanna kiss you all over ur face cz ur so cute like thats my babyyyyy yoeburnee i love youu so much hayete w im ready to do whatever it takes to make our relationship last forever, i would literally give up on anything except you and our relationship, i would do anything to ease your mind, i dont want you overthinking about stuff you shouldn’t be worried about, i want you to tell me what bothers you so i can fix it and avoid repeating the same mistakes over and over again, i love you so much baby, you mean everything to me and i hope you know that day by day i fall for you more and more, you make me feel like the happiest girl in the universe just by existing, and im so thankful to have a boyfriend as caring and sweet as you baby, i’m always thinking about you, since the moment i wake up till i fall asleep and i am not complaining at all, you never leave my mind, and i hope it stays like this forever, i hope we both keep trying for our relationship to work out, and i hope we end up together for the rest of our lives, i really hope i get to wake up next to you every day for the rest of my life, and i promise i’ll keep trying my hardest to get there, you’re all im focused on baby and i hope you know how much our relationship means to me, i’m so obsessed with you, i adore you so much ml and i hope i’m making you feel as appreciated and loved as you should be</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

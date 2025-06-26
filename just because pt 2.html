@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Just Because Pt. 2 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Just Because Pt. 2 💌</h1>
+  <p>
+ever since you came into my life i’ve been the happiest girl in the entire universe and it’s all thanks to you baby, you give me a reason to smile, you make my entire day just by existing, just remembering that i have a boyfriend like you puts the biggest smile on my face, seeing you on my wallpaper puts the biggest smile on my face, literally just you being yourself makes me the happiest person out there. You mean everything to me and i hope i make you feel as happy and loved and cared about as you make me feel about myself, I’m trying to be the best version of myself because you don’t deserve any less than that, you’re so perfect and sweet and caring, w you’re literally the cutest guy i’ve ever seen in my entire life w UR SO HANDSOMEE LIKE YES THATS MY MAN W MY HUSBAND W MY EVERYTHING  every second i spend with you reminds me how lucky i am to have you, you complete me, i would do anything to make you happy hayete, i would leave whatever im doing just to text you. W like. I love everything about you, your hair, your smile  w your voice i could listen to it for hours and hours endlessly, AND YOUR EYESSS OH MY GOD THEYRE THE PRETTIEST EYES IVE EVER SEEN IN MY WHOLE ENTIRE 16 YEARS OF LIVING  you’re the best thing that could happen to anyone, and i’m more than grateful to be that someone, i found in you a friend, a best friend, a lover, and i hope later on a husband, you’re literally a blessing sent from the above, LIKE GOD CREATED MEN () AND SENT YOU AS AN APOLOGY  i dont even know what i have done in my life to deserve such a perfect loving boyfriend, you mean the world to me baby and i’m so in love with you, day by day i fall in love with you more and more, you’ve never left my mind, not even for a second (IM NOT COMPLAINING), you’re the most important person to me, you’re my priority, ur so precious and i’d do anything if it means keeping our relationship, i’d do anything for you even, i’m so obsessed with you habib and i’m so grateful to have you in my life, you’re the partner i’ve been praying for, the partner i want and need in my life, you’re so mine  thank you for everything once again although i could never thank you enough, w I love you so much baby you’re my everything 
+  </p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

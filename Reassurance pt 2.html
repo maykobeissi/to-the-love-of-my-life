@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reassurance Pt. 2 💗</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Reassurance Pt. 2 💗</h1>
+  <p>you’re so adorable baby i dont even know what i did in my life to deserve such a boyfriend like you, you’re honestly the best thing that could’ve ever happened to me and I’m so grateful to have you in my life, i thank God every day, every minute, every second literally for giving me such a perfect partner, you’re a blessing sent from the above and i’m so happy i got to be the person that you love and care for, i’m so happy to have you in my life, you make me the happiest girl alive just by being there for me, you put a smile on my face so effortlessly and you just light up my entire day just by talking to me, like i could be having the worst day ever and just receiving a simple notification from you will fix my day, and even looking at my wallpaper makes me smile (ur so cute). You’re always on my mind, you’re my first thought when i wake up and my last one before i fall asleep, i’m always thinking about you no matter the situation, i’m so obsessed with you and with every single detail of yours baby, especially your eyes, you have the prettiest eyes ever and the cutest smile, and everything else about you is perfect. I absolutely adore you my love, you’re my favorite person, my boyfriend, my man, my husband 🥹 my other half, my world, you’re my everything, you mean the world to me and i would do anything just to see you happy, you mean to me more than anything else and you’re all i care for, you’re my priority and all that i am focused on is you, and us. I love how understanding you are and how we never argue at all, i just want to thank you for not giving up on us, and for trying your best, i really appreciate it, i know i can get too annoying sometimes but thank you for putting up with me and caring about our relationship, that means a lot to me. Thank you for making me feel so loved and appreciated, i hope i can make you as happy as you make me, i’ll keep trying my best for you, i promise. I really hope that we can work everything out for us to be together, i dont wanna lose someone like you, i want us to last forever and i would give up on anything just to keep you beside me. You give me a reason to keep going every single day, and i keep falling for you harder day by day, my love for you keeps growing day by day, and I just want you to know that I will always be there for you no matter what, even if we break up someday (not happening btw) i will still be there for you if you need someone to talk to, i hope you know how much you mean to me, how much i love you, and how much i care about you, you’re the first guy that I’ve loved this much and i’m ready to put in all my effort and time for our relationship to last because i want us to last forever, i want to be the girl you spend the rest of your life with and i want you to be the same to me, i really hope we’ll get there someday. I love you so much, there aren’t enough words for me to explain and express my feelings for you, i love you so much baby and I wish you all the best in the world, i adore you</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

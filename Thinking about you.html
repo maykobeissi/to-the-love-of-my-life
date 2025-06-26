@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thinking About You 💓</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>Thinking About You 💌</h1>
+  <p>
+hey baby i know ur asleep rn w sorry i spammed you shwy aa tiktok i didnt notice i sent that much stuff, you can avoid them dw, i just wanted to take some time and remind you that i love you so much, more than anything in this world, every day i fall in love with you more and more and my feelings for you keep on growing stronger every single moment spent together, i’m so in love with you, you got me so obsessed with you (im not complaining) I absolutely adore you baby, i want you to know that you mean everything to me, every since i met you i have never been as happy as i am now, you never fail to put a smile on my face even when im at my lowest, you make me so happy, my day and mood brighten up as soon as i remember i have a boyfriend as perfect as you, you’re out of a dream, you’re all i’ve been asking for my entire life, you’re all i want and need in this world, i’m so grateful for you, thank you so much for everything you do baby, for all the time and efforts you put in our relationship, thank you for trusting me with your heart, i know you got hurt and cheated on during your past relationships and i just wanna say thank you for giving me a chance with you, I promise i would never do anything to purposely hurt you in any possible way, i’m giving you everything i possibly can and i’m willing to do so as long as we’re together, i hope i’m treating you the way you deserve to be treated, you’re such a sweet guy habib it’s adorable, you have the purest soul and the kindest heart known to mankind, the sweetest personality, you’re so caring it aches my heart to think that someone could’ve possibly hurt you before, like thats my babyy how could you ever do such a thing, i cant bare seeing you sad at all it doesnt suit you, you’re the cutest guy in the universe, with the prettiest eyes everrrrr, i could gaze into them till the end of time, and dont get me started on your voice, i love it, it’s so soothing, and your hair, i wish i could play with it all day long while you lay on my chest and talk to me about anything and everything, and your smilee and laugh, they’re so contagious, i hope to be the reason behind your smile, i love seeing you happy, it makes me the happiest girl ever, everything about you is so perfect baby, i hate it when you get insecure over your looks, like what is there to hate about you? your height is perfect, your hair is perfect, your face is angelic, your smile is absolutely adorable, you’re out of this world and i mean it, you’re so unique, one of a kind, one in a billion, i’m so lucky to have you by my side, and i hope you know i’m always here for you no matter what, i’ll listen to you talk about anything that’s bothering you and if it’s related to me i’ll try my best to change and improve for you and our relationship, I’ll always be by your side, even if we part ways (which we won’t but okay) just know you’ll always have me no matter the circumstances. You’re the best boyfriend a girl could ask for, i’m so lucky to be the girl that has your attention, and the girl you have your eyes on, i still don’t know nor understand how I pulled a 20/10 like you, but i’m so thankful i did, i dont know how my life would be without you, and i don’t wanna know, i never want to wake up to no texts from you, i dont wanna spend my days without talking to you endlessly, I don’t wanna spend the rest of my life loving somebody else, i want it all with you, i want you in my future, i’ll keep on trying my best every day till we make it happen, i’m ready to put in every bit of time and effort, my attention is all yours already, and i’m fully focused on us and our relationship, i hope you know how much you truly mean to me, more than words could ever express, you mean everything to me, you’re my everything, you’re all i care for, most importantly you’re more than enough baby, i dont want you feeling down because of some people, i know it hurts but you’re worth so much more than that, it hurts me to see you bothered or upset, please dont think you’re just a backup person, you’re so much more than that baby and i would do anything to prove it to you. I value you so much, i would rather have you over anyone in this world, i’m ready to try a million times with you if it means being your girlfriend, i hope we last together because i am not giving up on us no matter what. I hope i’m showing you as much love and affection and attention as you deserve, i hope i make you as happy as you make me, i hope i never hurt you, i’m sorry if i did previously it was not intended mylove, i hope i’m not being annoying or too clingy or anything i dont want you to get bored of me nor lose interest or feelings, i’m so obsessed with you and i love it, you got me hooked and im not even exaggerating, you’re always on my mind, i think of you all day long, as soon as i wake up and right before i sleep, my first and last thought of the day, i really love you so much habib  and i hope you’re sleeping welllll and let me know when you wake up w goodluck for school and any upcoming exams i dont think i’ll be able to wake up early but i’ll try, call me if it’s urgent, i love youuuuu my handsome boyy my babyyy my sweetheartt my everythinggg the love of my lifeeee my husbanddd
+  </p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Time Meeting You 🥺</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a000d;
+      font-family: 'Quicksand', sans-serif;
+      color: white;
+      padding: 2rem;
+      position: relative;
+    }
+    .hearts {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 0, 80, 0.4);
+      font-size: 20px;
+      animation: float 7s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-10vh); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #ffb3c6;
+      font-size: 2.5rem;
+    }
+    p {
+      max-width: 800px;
+      margin: 2rem auto;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #ffccd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <h1>First Time Seeing You 🥺</h1>
+  <p>hayete i love you way more, you cant imagine how much yesterday meant to me, i can easily say it was the highlight of my entire existence, just spending some time with you felt like a heavenly experience, i have never felt as happy as i felt when i first saw you with my own eyes, then when i got to hug you and feel your touch, and hold your hand and look at your pretty eyes and see your smile, and feeling your lips on mine, those are some moments i would never forget in my entire life and i would give everything i have to relive it over and over again. I can’t explain how joyful and thankful and grateful i am to have a boyfriend like you, you make me feel like the happiest girl in the universe, i’m so glad none of us gave up, im so glad we both stayed loyal, im so glad the distance separating us didnt change anything between you and I, and i hope it never will baby, i promise it won’t, i’ll keep trying my best for you because i am 100% sure you’re the one for me, you were made for me, and i simply can’t imagine life without you, i dont even wanna think about it, the thought of it crossing my mind devastates me and i wish i wont ever have to feel your absence, you mean everything to me, you’re the only person that actually understands me and you’re a part of me, you complete me, i care about you more than anything else in this world, nothing and no one comes close to what you are in my eyes, to me you’re the guy i want to spend the rest of my life with, you’re the guy i want to wake up next to every morning, you’re the guy whose arms i want to fall asleep in every night, you’re the guy whose voice comforts me more than anything, you’re my everything, and i’m willing to do everything to avoid losing you, it would break my heart to see you with another girl, i want you all to myself, im not giving up on us, i want us to fix our relationship together and improve ourselves one for another to reach what we both want for the both of us, i’m sorry if i ever hurt you baby i really didnt mean to, i’m sorry if i ever treated you wrong, i’m sorry if i was ever rude to you, you deserve so much better, i want the best for you, i want you to know that our relationship is all that matters to me, and i couldnt care about anything else besides you, us and our relationship, i love you so much habib and i mean it with all my heart, i’m so obsessed with you, i adore youu, you’re the best boyfriend ever and im so lucky to have someone like you in my life, i could never thank God enough for sending me such a caring and sweet guy and i’m forever thankful for you and everything you do i love you so much hayete</p>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const hearts = document.querySelector('.hearts');
+    for (let i = 0; i < 60; i++) {
+      const heart = document.createElement('span');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (Math.random() * 4 + 6) + 's';
+      heart.style.fontSize = (Math.random() * 14 + 10) + 'px';
+      hearts.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
